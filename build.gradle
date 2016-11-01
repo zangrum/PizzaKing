@@ -36,19 +36,17 @@ sourceSets {
         resources {
             srcDirs = ['src/rick/main-resources']
         }
-        output.resourcesDir = 'out/res'
-        output.classesDir   = 'out/bin'
     }
     test {
-        java{
-            srcDirs= ['src/rick/test']
+        java {
+            srcDirs = ['src/rick/test']
         }
         resources {
             srcDirs = ['src/rick/test-resources']
         }
     }
 }
-test{
+test {
     // set a system property for the test JVM(s)
     systemProperty 'some.prop', 'value'
 
@@ -63,9 +61,6 @@ test{
     minHeapSize = "128m"
     maxHeapSize = "512m"
 
-    // set JVM arguments for the test JVM(s)
-    jvmArgs '-XX:MaxPermSize=256m'
-
     // listen to events in the test execution lifecycle
     beforeTest { descriptor ->
         logger.lifecycle("Running test: " + descriptor)
@@ -73,13 +68,13 @@ test{
 
     // listen to standard out and standard error of the test JVM(s)
     onOutput { descriptor, event ->
-        logger.lifecycle("Test: " + descriptor + " produced standard out/err: " + event.message )
+        logger.lifecycle("Test: " + descriptor + " produced standard out/err: " + event.message)
     }
 }
 idea {
     module {
         excludeDirs = [file(".gradle")]
-        [ "EBooks", "PizzaKingData"].each {
+        ["EBooks", "PizzaKingData"].each {
             excludeDirs << file("$buildDir/$it")
         }
     }

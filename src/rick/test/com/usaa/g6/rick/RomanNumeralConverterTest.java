@@ -120,4 +120,8 @@ public class RomanNumeralConverterTest {
     public void testRomanConvertOfArabicNumeral81toLXXXI() {
         assertEquals("LXXXI", new RomanNumeralConverter().convert(81));
     }
+    @Test
+    public void testRomanConvertOfArabicNumeral82toLXXXII() {
+        assertEquals("LXXXII", new RomanNumeralConverter().convert(82));
+    }
 }

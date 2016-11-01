@@ -5,6 +5,10 @@ package com.usaa.g6.rick;
  */
 public class RomanNumeralConverter {
     public String convert(int value) {
-        return "I";
+        String result="";
+        for (int i =0;i<value;i++){
+            result += "I";
+        }
+        return result;
     }
 }

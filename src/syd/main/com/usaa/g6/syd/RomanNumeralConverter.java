@@ -6,7 +6,7 @@ package com.usaa.g6.syd;
 public class RomanNumeralConverter {
     public String convert(int value) {
         //return "I";
-        for (int i = i; i <= value; i++){
+        for (int i = 0; i < value; i++){
             String romanNumeral = "I";
             return romanNumeral;
             romanNumeral = romanNumeral + "I";

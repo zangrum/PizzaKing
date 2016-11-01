@@ -6,6 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/rick/main" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/rick/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/syd/main" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/syd/test" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/EBooks" />
       <excludeFolder url="file://$MODULE_DIR$/PizzaKingData" />
     </content>

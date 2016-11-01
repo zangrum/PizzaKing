@@ -1,2 +1,10 @@
-out/
+PizzaKing.ipr
+PizzaKing.iml
+PizzaKing.iws
+build/
 .idea/
+out/
+.gradle/
+gradle/
+gradlew
+gradlew.bat
